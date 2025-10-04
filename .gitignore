@@ -1,0 +1,17 @@
+# ---- 基本は全部無視 ----
+*
+
+# ---- フォルダは無視しない ----
+!*/
+
+# ---- 残すファイル ----
+!*.cpp
+!*.hpp
+!.gitignore
+!README.md
+
+# ---- 無視したいフォルダ ----
+ac-library/
+
+# ---- Code Runner 一時ファイル ----
+tempCodeRunnerFile*
