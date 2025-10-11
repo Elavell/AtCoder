@@ -20,10 +20,8 @@ const int MOD=1000000007;
 const int MODD=998244353;
 const ld DINF=INFINITY;
 const ld PI=3.14159265358979323846;
-const int dx4[] = {0, 1, 0, -1};
-const int dy4[] = {1, 0, -1, 0};
-const int dx8[] = {0, 1, 0, -1, 1, -1, 1, -1};
-const int dy8[] = {1, 0, -1, 0, 1, 1, -1, -1};
+const int dx[] = {0, 1, 0, -1}; //const int dx[] = {0, 1, 0, -1, 1, -1, 1, -1};
+const int dy[] = {1, 0, -1, 0}; //const int dy[] = {1, 0, -1, 0, 1, 1, -1, -1};
 #define overload5(a,b,c,d,e,name,...) name
 #define overload4(a,b,c,d,name,...) name
 #define overload3(a,b,c,name,...) name
@@ -49,7 +47,7 @@ const int dy8[] = {1, 0, -1, 0, 1, 1, -1, -1};
 #define rall(x) x.rbegin(), x.rend()
 #define sz(x) (int)(x).size()
 #define pcnt(x) __builtin_popcountll(x)
-template<class T>istream& operator>>(istream&i,vc<T>&v){rep(j,sz(v))i>>v[j];return i;}
+template<class T>istream& operator>>(istream&i,vector<T>&v){rep(j,sz(v))i>>v[j];return i;}
 
 void solve() {
 }
@@ -59,7 +57,7 @@ int main() {
     ios::sync_with_stdio(false);
     cout << fixed << setprecision(20);
     ll T = 1;
-    //cin >> T; // マルチテストケースか確認！
+    //cin >> T;
     rep(T) solve();
     return 0;
 }
